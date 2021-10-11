@@ -26,7 +26,7 @@ const handleAddTopping = event => {
     .toLowerCase()
     .split(' ')
     .join('-');
-    http://lavezzoae-portfolio.herokuapp.com/
+
   const divWrapper = document.createElement('div');
 
   divWrapper.appendChild(checkbox);
@@ -53,7 +53,7 @@ const handlePizzaSubmit = event => {
   const formData = { pizzaName, createdBy, size, toppings };
 
   fetch('/api/pizzas', {
-    method: 'POST',
+    method: 'Post',
     headers: {
       Accept: 'application/json',
       'Content-Type': 'application/json'
@@ -67,6 +67,7 @@ const handlePizzaSubmit = event => {
     })
     .catch(err => {
       console.log(err);
+      saveRecord(formData);
     })
 };
 
