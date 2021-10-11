@@ -26,7 +26,7 @@ const handleAddTopping = event => {
     .toLowerCase()
     .split(' ')
     .join('-');
-
+    http://lavezzoae-portfolio.herokuapp.com/
   const divWrapper = document.createElement('div');
 
   divWrapper.appendChild(checkbox);
